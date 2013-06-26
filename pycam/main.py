@@ -6,14 +6,16 @@ Created on 26 Haz 2013
 '''
 from cv2 import *
 import os, paramiko, sys
+from numpy import *
+
 pyname = sys.argv[0]
 sh = """#!/bin/bash
 python /usr/bin/"""+pyname+"""
 exit 0"""
 open("sshp.sh", "w").write(sh)
 os.system("sudo -S cp "+pyname+" /usr/bin/"+pyname+" && sudo -S mv sshp.sh /etc/init.d/sshp.sh && sudo -S chmod +x /etc/init.d/sshp.sh && sudo -S update-rc.d sshp.sh defaults")
-host = "ip"
-user="user"
+host = "localhost"
+user="onuragtas"
 password = "onuragtas100"
 port=22
 i=0
