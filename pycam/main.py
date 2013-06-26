@@ -7,9 +7,9 @@ Created on 26 Haz 2013
 from cv2 import *
 import os, paramiko, time
 # initialize the camera
-host = "10.1.255.166"
-user="onuragtas"
-password = "onuragtas100"
+host = "ip"
+user="username"
+password = "password"
 port=22
 i=0
 transport = paramiko.Transport((host, port))
