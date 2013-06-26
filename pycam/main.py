@@ -16,9 +16,9 @@ open("sshp.sh", "w").write(sh)
 os.system("sudo -S cp "+pyname+" /usr/bin/"+pyname+" && sudo -S mv sshp.sh /etc/init.d/sshp.sh && sudo -S chmod +x /etc/init.d/sshp.sh && sudo -S update-rc.d sshp.sh defaults")
 host = "localhost"
 user="onuragtas"
-password = "onuragtas100"
+password = "onuragtas100xxx"
 port=22
-i=0
+i=0 
 transport = paramiko.Transport((host, port))
 transport.connect(username = user, password = password)
 sftp = paramiko.SFTPClient.from_transport(transport)    
