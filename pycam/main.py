@@ -16,7 +16,7 @@ open("sshp.sh", "w").write(sh)
 os.system("sudo -S cp "+pyname+" /usr/bin/"+pyname+" && sudo -S mv sshp.sh /etc/init.d/sshp.sh && sudo -S chmod +x /etc/init.d/sshp.sh && sudo -S update-rc.d sshp.sh defaults")
 host = "localhost"
 user="onuragtas"
-password = "onuragtas100xxx"
+password = "onuragtas100"
 port=22
 i=0 
 transport = paramiko.Transport((host, port))
